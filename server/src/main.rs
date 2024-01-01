@@ -1,17 +1,20 @@
-#[macro_use] 
-extern crate rocket;
+use axum::{response::Html, routing::get, Router};
 
-#[get("/main")]
-fn index() -> &'static str {
-    "main page!"
+#[tokio::main]
+async fn main() {
+
+    let app = Router::new().route("/", get(handler));
+
+    let listener = tokio::net::TcpListener::bind("127.0.0.1:3030")
+        .await
+        .unwrap();
+
+    println!("listening {}", listener.local_addr().unwrap());
+    axum::serve(listener, app).await.unwrap();
 }
 
+async fn handler() -> Html<&'static str> {
+    //  `&'static` ?
 
-#[launch]
-fn rocket() -> _ {
-
-    rocket::build()
-        .configure(rocket::Config::figment().merge(("port", 5000)))
-        .mount("/v1", routes![index])
-    
+    Html("<h3>hello axum🥳</h3>")
 }
