@@ -3,7 +3,7 @@ import Card from "@/components/Card";
 export default function Home() {
   return (
     <div>
-      <Card />
+    111
     </div>
   );
 }

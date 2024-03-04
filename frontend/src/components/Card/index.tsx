@@ -5,5 +5,6 @@ export default function Card() {
     <div className="w-3/12 bg-amber-300 h-80 border-2 border-stone-600	">
       card
     </div>
+    
   );
 }
