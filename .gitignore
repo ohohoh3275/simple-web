@@ -1,0 +1,6 @@
+server/target/**
+server/.env.prod
+
+frontend/node_modules
+frontend/.next
+frontend/.env.prod
