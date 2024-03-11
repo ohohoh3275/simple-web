@@ -11,11 +11,12 @@ export default function Home() {
   const [selectedMenu, setSelectedMenu] = useState('1');
 
   return (
+    <>
+
     <MainContext.Provider value={ {selectedMenu, setSelectedMenu} }>
-    <div className="w-full h-screen border-2 border-red-700">
       <NavBar/>
       <Main/>
-    </div>
     </MainContext.Provider>
+    </>
   );
 }

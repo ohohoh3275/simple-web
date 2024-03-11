@@ -17,22 +17,22 @@ export default function NavBar() {
             </Link>
           </li>
           <li className={C.menu}>
-          <Link href="/one">
+          <Link href="/two">
               <button onClick={() => setSelectedMenu('2')}>2</button>
           </Link>
           </li>
           <li className={C.menu}>
-            <Link href="/one">
+            <Link href="/three">
             <button onClick={() => setSelectedMenu('3')}>3</button>
             </Link>
           </li>
           <li className={C.menu}>
-          <Link href="/one">
+          <Link href="/four">
           <button onClick={() => setSelectedMenu('4')}>4</button>
           </Link>
           </li>
           <li className={C.menu}>
-            <Link href="/one">
+            <Link href="/five">
               <button onClick={() => setSelectedMenu('5')}>5</button>
             </Link>
           </li>

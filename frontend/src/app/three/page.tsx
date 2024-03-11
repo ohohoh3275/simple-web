@@ -1,8 +1,8 @@
 import { useEffect } from "react"
 
-export default function One() {
+export default function Three() {
     
     return (
-        <>one</>
+        <>three</>
     )
 }
