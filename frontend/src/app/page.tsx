@@ -12,7 +12,6 @@ export default function Home() {
 
   return (
     <>
-
     <MainContext.Provider value={ {selectedMenu, setSelectedMenu} }>
       <NavBar/>
       <Main/>
