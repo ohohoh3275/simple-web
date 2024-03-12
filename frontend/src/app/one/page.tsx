@@ -1,8 +1,9 @@
-import { useEffect } from "react"
+import { PageOne } from "@/components/pages/one"
+
 
 export default function One() {
     
     return (
-        <>one</>
+        <><PageOne/></>
     )
 }

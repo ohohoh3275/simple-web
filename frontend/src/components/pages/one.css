@@ -1,0 +1,11 @@
+
+.mouse {
+    width: 80px;
+    height: 80px;
+    background-color: greenyellow;
+
+    img {
+        width: 70px;
+        height: 70px;
+    }
+}
