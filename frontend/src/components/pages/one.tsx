@@ -1,6 +1,6 @@
 "use client"
 
-import { useEffect, useLayoutEffect, useRef, useState } from "react"
+import { useLayoutEffect, useState } from "react"
 import './one.css';
 
 export const PageOne = () => {
@@ -8,10 +8,12 @@ export const PageOne = () => {
     const [x, setX] = useState(0);
     const [y, setY] = useState(0);
 
-    window.addEventListener("mousemove", (e: any) => {
-        setX(e.clientX);
-        setY(e.clientY);
-    })
+    useLayoutEffect(() => {
+        window.addEventListener("mousemove", (e: any) => {
+            setX(e.clientX);
+            setY(e.clientY);
+        })
+    }, [])
         
     return (<>
         <div 

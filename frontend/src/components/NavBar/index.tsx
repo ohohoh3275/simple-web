@@ -1,11 +1,11 @@
 import { useContext } from "react";
 import C from "./index.module.css";
-import { MainContext } from "@/app/page";
 import Link from "next/link";
+import { MainContext } from "../Main";
 
 export default function NavBar() {
 
-  const { selectedMenu, setSelectedMenu } = useContext(MainContext);
+  const { selectedMenu, setSelectedMenu } = useContext<any>(MainContext);
 
   return (
     <header className="w-full bg-amber-300 h-100 border-2 border-stone-600	">
