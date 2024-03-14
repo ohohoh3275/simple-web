@@ -1,21 +1,20 @@
 "use client"
-import NavBar from "@/components/NavBar";
-import Main from "@/components/Main";
-import '../style/index.styles.css';
-import { createContext, useState } from "react";
 
-export const MainContext = createContext({});
+import NavBar from "@/components/NavBar";
+import Main, { MainContext } from "@/components/Main";
+import '../style/index.styles.css';
+import { useState } from "react";
 
 export default function Home() {
 
-  const [selectedMenu, setSelectedMenu] = useState('1');
+  const [selectedMenu, setSelectedMenu] = useState<any>('1');
 
   return (
-    <MainContext.Provider value={ {selectedMenu, setSelectedMenu} }>
-    <div className="w-full h-screen border-2 border-red-700">
+    <>
+    <MainContext.Provider value={ { selectedMenu, setSelectedMenu } }>
       <NavBar/>
       <Main/>
-    </div>
     </MainContext.Provider>
+    </>
   );
 }

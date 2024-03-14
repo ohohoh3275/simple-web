@@ -1,11 +1,9 @@
-import { useEffect } from "react"
-
+import { PageOne } from "@/client-pages/one";
 
 
 export default function One() {
-
-
+    
     return (
-        <>one</>
+        <><PageOne/></>
     )
 }
