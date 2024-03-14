@@ -19,7 +19,7 @@ export const PageOne = () => {
     return (<>
         <div 
             className="mouse"
-            style={{ position: 'fixed', left: `${x}px`, top: `${y}px` }}
+            style={{ left: `${x}px`, top: `${y}px` }}
         >
             <Image
                 alt={'me'} 

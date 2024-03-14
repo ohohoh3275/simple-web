@@ -1,4 +1,4 @@
-import { PageOne } from "@/components/pages/one"
+import { PageOne } from "@/client-pages/one";
 
 
 export default function One() {
