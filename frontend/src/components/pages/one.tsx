@@ -2,6 +2,7 @@
 
 import { useLayoutEffect, useState } from "react"
 import './one.css';
+import Image from "next/image";
 
 export const PageOne = () => {
 
@@ -20,9 +21,35 @@ export const PageOne = () => {
             className="mouse"
             style={{ position: 'fixed', left: `${x}px`, top: `${y}px` }}
         >
-            <img 
+            <Image
+                alt={'me'} 
+                width={40}
+                height={40}
                 src={'https://github.com/ohohoh3275/simple-web/assets/75511229/e9f39102-29c2-4ea4-aa1e-f82a40fdda1b'}/>
-            hi
+        </div>
+
+        <div className={"yearlyBox"}>
+            <div>
+                1994~2013
+            </div>
+
+            <div>
+                2013~2018
+            </div>
+
+            <div>
+                2018~2019
+            </div>
+
+            <div>
+                2019~2020
+            </div>
+            <div>
+                2020~2021
+            </div>
+            <div>
+                2021~2024
+            </div>
         </div>
     </>)
 }
