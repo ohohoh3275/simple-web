@@ -4,7 +4,9 @@
     height: 40px;
     cursor: none;
     position: fixed;
-    
+    z-index: 99999;
+    cursor: none;
+
     img {
         border-radius: 50%;
     }
@@ -18,4 +20,9 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+
+}
+
+.yearlyBox button {
+    height: 40px;
 }

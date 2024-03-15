@@ -16,7 +16,8 @@ export const PageOne = () => {
         })
     }, [])
         
-    return (<>
+    return (
+        <>
         <div 
             className="mouse"
             style={{ left: `${x}px`, top: `${y}px` }}
@@ -29,27 +30,28 @@ export const PageOne = () => {
         </div>
 
         <div className={"yearlyBox"}>
-            <div>
+            <button>
                 1994~2013
-            </div>
+            </button>
 
-            <div>
+            <button>
                 2013~2018
-            </div>
+            </button>
 
-            <div>
+            <button>
                 2018~2019
-            </div>
+            </button>
 
-            <div>
+            <button>
                 2019~2020
-            </div>
-            <div>
+            </button>
+            <button>
                 2020~2021
-            </div>
-            <div>
+            </button>
+            <button>
                 2021~2024
-            </div>
+            </button>
         </div>
-    </>)
+        </>
+    )
 }
