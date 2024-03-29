@@ -14,11 +14,12 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+
   return (
     <html lang="en">
       {/* Error: Hydration failed because the initial UI does not match what was rendered on the server. */}
-      {/* so i put common div into body */}
         <body className={inter.className}>
+
           <div className="w-full h-screen border-2 border-red-700">
               {children}
           </div>
